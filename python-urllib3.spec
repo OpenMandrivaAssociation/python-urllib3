@@ -1,6 +1,6 @@
 %define	module	urllib3
 %define name	python-%{module}
-%define version 1.4
+%define version 1.5
 %define release 1
 
 Summary:	Python HTTP library with thread-safe connection pooling, file post, and more
