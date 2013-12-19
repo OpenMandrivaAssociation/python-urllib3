@@ -5,13 +5,12 @@
 
 Summary:	Python HTTP library with thread-safe connection pooling, file post, and more
 Name:		%{name}
-Version:	%{version}
-Release:	%{release}
-Source0:	http://pypi.python.org/packages/source/u/%{module}/%{module}-%{version}.tar.gz
+Version:	1.7.1
+Release:	1
+Source0:	https://pypi.python.org/packages/source/u/urllib3/urllib3-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
 Url:		http://urllib3.readthedocs.org/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 BuildRequires:	python-devel, python-setuptools
 
@@ -30,17 +29,14 @@ similar vein.
 %setup -q -n %{module}-%{version}
 
 %install
-%__rm -rf %{buildroot}
 PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot}
 
 %clean
-%__rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root)
 %doc *.txt
-%py_sitedir/urllib3*
-%py_sitedir/dummyserver*
+%py_puresitedir/urllib3*
+%py_puresitedir/dummyserver*
 
 
 %changelog
@@ -51,4 +47,5 @@ PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot}
 * Wed Apr 25 2012 Lev Givon <lev@mandriva.org> 1.3-1
 + Revision: 793427
 - imported package python-urllib3
+
 
