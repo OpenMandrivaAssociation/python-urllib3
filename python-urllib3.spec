@@ -1,13 +1,11 @@
 %define	module	urllib3
-%define name	python-%{module}
-%define version 1.4
-%define release 1
 
 Summary:	Python HTTP library with thread-safe connection pooling, file post, and more
-Name:		%{name}
-Version:	1.7.1
+
+Name:		python-%{module}
+Version:	1.8.2
 Release:	1
-Source0:	https://pypi.python.org/packages/source/u/urllib3/urllib3-%{version}.tar.gz
+Source0:	http://pypi.python.org/packages/source/u/urllib3/urllib3-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
 Url:		http://urllib3.readthedocs.org/
@@ -35,17 +33,8 @@ PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot}
 
 %files
 %doc *.txt
-%py_puresitedir/urllib3*
-%py_puresitedir/dummyserver*
+%{py_puresitedir}/urllib3*
+%{py_puresitedir}/dummyserver*
 
-
-%changelog
-* Tue Jul 17 2012 Lev Givon <lev@mandriva.org> 1.4-1
-+ Revision: 810074
-- Update to 1.4.
-
-* Wed Apr 25 2012 Lev Givon <lev@mandriva.org> 1.3-1
-+ Revision: 793427
-- imported package python-urllib3
 
 
