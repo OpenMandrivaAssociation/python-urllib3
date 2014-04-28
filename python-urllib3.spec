@@ -34,7 +34,6 @@ PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot}
 %files
 %doc *.txt
 %{py_puresitedir}/urllib3*
-%{py_puresitedir}/dummyserver*
 
 
 
