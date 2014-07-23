@@ -3,7 +3,7 @@
 Summary:	Python HTTP library with thread-safe connection pooling, file post, and more
 
 Name:		python-%{module}
-Version:	1.8.2
+Version:	1.8.3
 Release:	1
 Source0:	http://pypi.python.org/packages/source/u/urllib3/urllib3-%{version}.tar.gz
 License:	MIT
@@ -34,6 +34,3 @@ PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot}
 %files
 %doc *.txt
 %{py_puresitedir}/urllib3*
-
-
-
