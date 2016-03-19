@@ -4,7 +4,7 @@ Summary:	Python HTTP library with thread-safe connection pooling, file post, and
 
 Name:		python-%{module}
 Version:	1.9
-Release:	4
+Release:	5
 Source0:	https://pypi.python.org/packages/source/u/urllib3/urllib3-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
