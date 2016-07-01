@@ -1,7 +1,2 @@
-removed_sources:
-  urllib3-1.4.tar.gz: d4f498ccda19ed2bb7673bd0fede14f1d1b8d8b7
-  urllib3-1.7.1.tar.gz: 2defd91cf718c3be3301fb754d9e3acc9f6e5851
-  urllib3-1.8.2.tar.gz: a53fa7b7abff9adf3d977d7205ef4f042f5273df
-  urllib3-1.8.3.tar.gz: 00c92b0c3b0756ae3c4e6262d5bc80023dfe9ca3
 sources:
-  urllib3-1.9.tar.gz: 9522197efb2a2b49ce804de3a515f06d97b6602f
+  1.16.tar.gz: e7f0cf4581e3d1cffdacb339d382c06251cd3237
