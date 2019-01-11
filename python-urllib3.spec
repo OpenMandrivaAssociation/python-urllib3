@@ -3,9 +3,9 @@
 
 Summary:	Python HTTP library with thread-safe connection pooling, file post, and more
 Name:		python-%{module}
-Version:	1.22
-Release:	3
-Source0:	https://github.com/shazow/urllib3/archive/%{version}.tar.gz
+Version:	1.24.1
+Release:	1
+Source0:	https://pypi.io/packages/source/u/urllib3/urllib3-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
 Url:		http://urllib3.readthedocs.org/
@@ -51,7 +51,7 @@ similar vein.
 PYTHONDONTWRITEBYTECODE=1 python2 setup.py install --root=%{buildroot}
 %endif
 
-PYTHONDONTWRITEBYTECODE=1 %__python setup.py install --root=%{buildroot}
+PYTHONDONTWRITEBYTECODE=1 %__%py_install
 
 %files
 %doc *.txt
