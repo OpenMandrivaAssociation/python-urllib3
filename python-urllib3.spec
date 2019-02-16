@@ -3,6 +3,9 @@
 
 Summary:	Python HTTP library with thread-safe connection pooling, file post, and more
 Name:		python-%{module}
+# ***** WARNING *****
+# Before updating, make sure python-requests supports the
+# new version and is being updated at the same time.
 Version:	1.24.1
 Release:	1
 Source0:	https://github.com/shazow/urllib3/archive/%{version}.tar.gz
