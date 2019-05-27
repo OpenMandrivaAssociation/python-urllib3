@@ -6,9 +6,9 @@ Name:		python-%{module}
 # ***** WARNING *****
 # Before updating, make sure python-requests supports the
 # new version and is being updated at the same time.
-Version:	1.24.1
+Version:	1.25.3
 Release:	1
-Source0:	https://github.com/shazow/urllib3/archive/%{version}.tar.gz
+Source0:	https://github.com/shazow/urllib3/archive/%{module}-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
 Url:		http://urllib3.readthedocs.org/
@@ -47,7 +47,7 @@ each solving a different scope of problems, and urllib3 follows in a
 similar vein.
 
 %prep
-%setup -q -n %{module}-%{version}
+%autosetup -n %{module}-%{version} -p1
 
 %install
 %if %{with python2}
