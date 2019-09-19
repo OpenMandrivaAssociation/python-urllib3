@@ -6,9 +6,9 @@ Name:		python-%{module}
 # ***** WARNING *****
 # Before updating, make sure python-requests supports the
 # new version and is being updated at the same time.
-Version:	1.25.3
+Version:	1.25.4
 Release:	1
-Source0:	https://github.com/shazow/urllib3/archive/%{module}-%{version}.tar.gz
+Source0:	https://github.com/urllib3/urllib3/archive/%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
 Url:		http://urllib3.readthedocs.org/
