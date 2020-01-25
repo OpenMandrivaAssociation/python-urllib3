@@ -6,7 +6,7 @@ Name:		python-%{module}
 # ***** WARNING *****
 # Before updating, make sure python-requests supports the
 # new version and is being updated at the same time.
-Version:	1.25.7
+Version:	1.25.8
 Release:	1
 Source0:	https://github.com/urllib3/urllib3/archive/%{version}.tar.gz
 License:	MIT
