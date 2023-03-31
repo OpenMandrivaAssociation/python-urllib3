@@ -7,7 +7,7 @@ Name:		python-%{module}
 # Before updating, make sure python-requests supports the
 # new version and is being updated at the same time.
 Version:	1.26.13
-Release:	1
+Release:	2
 Source0:	https://github.com/urllib3/urllib3/archive/%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
