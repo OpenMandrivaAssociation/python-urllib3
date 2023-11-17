@@ -13,7 +13,8 @@ Group:		Development/Python
 Url:		http://urllib3.readthedocs.org/
 BuildArch:	noarch
 BuildRequires:	pkgconfig(python3)
-BuildRequires:	python-setuptools
+BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(hatchling)
 
 %description
 There are two critical features missing from the Python standard
