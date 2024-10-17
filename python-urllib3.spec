@@ -10,7 +10,7 @@ Release:	1
 Source0:	https://github.com/urllib3/urllib3/archive/%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
-Url:		http://urllib3.readthedocs.org/
+Url:		https://urllib3.readthedocs.org/
 BuildArch:	noarch
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	python%{pyver}dist(pip)
