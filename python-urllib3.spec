@@ -5,7 +5,7 @@ Name:		python-%{module}
 # ***** WARNING *****
 # Before updating, make sure python-requests supports the
 # new version and is being updated at the same time.
-Version:	2.6.1
+Version:	2.6.3
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-%{version}.tar.gz
 License:	MIT
