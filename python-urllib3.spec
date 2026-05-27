@@ -1,22 +1,25 @@
-%define	module	urllib3
+%define module urllib3
 
+Name:		python-urllib3
 Summary:	Python HTTP library with thread-safe connection pooling, file post, and more
-Name:		python-%{module}
 # ***** WARNING *****
 # Before updating, make sure python-requests supports the
 # new version and is being updated at the same time.
-Version:	2.6.3
+Version:	2.7.0
 Release:	1
-Source0:	https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
-Url:		https://urllib3.readthedocs.org/
+URL:		https://urllib3.readthedocs.org/
+Source0:	https://files.pythonhosted.org/packages/source/u/%{module}/%{module}-%{version}.tar.gz#/%{name}-%{version}.tar.gz
 # Also: https://github.com/urllib3/urllib3
-BuildArch:	noarch
+
 BuildSystem:	python
+BuildArch:	noarch
 BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(hatchling)
 BuildRequires:	python%{pyver}dist(hatch-vcs)
+BuildRequires:	python%{pyver}dist(setuptools-scm)
+BuildRequires:	python%{pyver}dist(wheel)
 
 %description
 There are two critical features missing from the Python standard
@@ -30,5 +33,6 @@ each solving a different scope of problems, and urllib3 follows in a
 similar vein.
 
 %files
-%doc *.txt
-%{py_puresitedir}/urllib3*
+%{python_sitelib}/%{module}
+%{python_sitelib}/%{module}-%{version}.dist-info
+
