@@ -5,8 +5,8 @@ Summary:	Python HTTP library with thread-safe connection pooling, file post, and
 # ***** WARNING *****
 # Before updating, make sure python-requests supports the
 # new version and is being updated at the same time.
-Version:	2.7.0
-Release:	2
+Version:	2.8.0
+Release:	1
 License:	MIT
 Group:		Development/Python
 URL:		https://urllib3.readthedocs.org/
@@ -20,11 +20,6 @@ BuildRequires:	python%{pyver}dist(hatchling)
 BuildRequires:	python%{pyver}dist(hatch-vcs)
 BuildRequires:	python%{pyver}dist(setuptools-scm)
 BuildRequires:	python%{pyver}dist(wheel)
-
-# OpenSSL 4+ / CPython drop ssl.PROTOCOL_TLSv1; pyopenssl contrib must not
-# touch it at import time. Backport of upstream PR #5097 (post-2.7.0).
-%patchlist
-python-urllib3-2.7.0-PROTOCOL_TLSv1-openssl4.patch
 
 %description
 There are two critical features missing from the Python standard
