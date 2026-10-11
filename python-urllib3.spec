@@ -6,7 +6,7 @@ Summary:	Python HTTP library with thread-safe connection pooling, file post, and
 # Before updating, make sure python-requests supports the
 # new version and is being updated at the same time.
 Version:	2.8.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Python
 URL:		https://urllib3.readthedocs.org/
